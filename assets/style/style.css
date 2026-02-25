@@ -1,0 +1,52 @@
+/* Header */
+header nav.navbar .notifications img {
+    height: 20px;
+}
+
+header nav.navbar .logo img {
+    height: 40px;
+    border-radius: 50%;
+    ;
+}
+
+header nav.navbar .notifications, header nav.navbar .logo {
+    cursor: pointer;
+}
+
+/* Hero */
+.hero-top {
+    background-color: #7550FF;
+}
+
+#hero h1.title {
+    color: white
+}
+
+#hero p.description {
+    color: white;
+    opacity: 0.6;
+}
+
+#hero a.btn:first-of-type {
+    background-color: #1ACB97;
+    color: white
+}
+
+#hero a.btn:last-of-type {
+    background-color: white
+}
+
+#hero a.btn {
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+#hero .card-left i {
+    background-color: rgb(245, 213, 155);
+    color: #C48336;
+    padding: 15px;
+    width: auto;
+    border-radius: 50%;
+    ;
+}

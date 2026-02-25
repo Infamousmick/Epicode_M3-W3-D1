@@ -10,9 +10,189 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/style/style.css" />
-    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/b8761b87ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Esercizio M3 W3 D1</title>
   </head>
   <body>
+    <!--Navbar-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/img/logo.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Browse
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Landing
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex gap-3 align-items-center mx-1">
+              <div class="notifications">
+                <img
+                  src="assets/img/notifications.png"
+                  alt="Notifiche"
+                  class="w-20"
+                />
+              </div>
+              <div class="logo">
+                <img src="assets/img/avatar-1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-top">
+          <div class="container-md px-2 px-md-4 px-lg-5 pt-2 pt-md-4">
+            <div class="row row-cols-12 row-cols-lg-2">
+              <div class="row-sx pt-lg-5">
+                <h1 class="title">Welcome Web Students</h1>
+                <p class="description">
+                  Hand-picked Instructor and expertly crafted courses, designed
+                  for the modern students and entrepreneur.
+                </p>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn">Browse Course</a>
+                  <a href="#" class="btn">Are You Instructor?</a>
+                </div>
+              </div>
+              <div class="row-dx d-flex justify-content-center">
+                <img
+                  src="assets/img/hero-img.png"
+                  alt="welcome"
+                  class="img-fluid mt-4 mt-lg-0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-md px-2 px-md-4 px-lg-5 pt-2 pt-md-4">
+          <div
+            class="row row-cols-12 row-cols-md-4 justify-content-center column-gap-5"
+          >
+            <div class="col text-nowrap">
+              <div class="card border-0">
+                <div class="card-body d-flex align-items-center gap-3">
+                  <div class="card-left">
+                    <i class="fa-solid fa-video"></i>
+                  </div>
+                  <div class="card-right">
+                    <h5 class="card-title">30,000 online courses</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                      Enjoy a variety of fresh topics
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col text-nowrap">
+              <div class="card border-0">
+                <div class="card-body d-flex align-items-center gap-3">
+                  <div class="card-left">
+                    <i class="fa-solid fa-video"></i>
+                  </div>
+                  <div class="card-right">
+                    <h5 class="card-title">Expert instruction</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                      Find the right instructor for you
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col text-nowrap">
+              <div class="card border-0">
+                <div class="card-body d-flex align-items-center gap-3">
+                  <div class="card-left">
+                    <i class="fa-solid fa-video"></i>
+                  </div>
+                  <div class="card-right">
+                    <h5 class="card-title">Lifetime access</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                      Learn on your schedule
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
