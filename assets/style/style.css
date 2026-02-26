@@ -88,12 +88,13 @@ header nav.navbar .notifications, header nav.navbar .logo {
 
 
 #recommend .stats-container i {
-
     padding: 10px;
     width: auto;
     border-radius: 50%;
     ;
 }
+
+
 
 .stats-container i {
     color: rgb(82, 82, 82);
@@ -118,13 +119,20 @@ i.fa-chart-simple {
     color: #FBA746;
 }
 
+#recommend .star-container p {
+    color: rgb(170, 170, 170);
+}
+
+#recommend .star-container p.star-text {
+    color: #FBA746;
+}
 
 #recommend .price-container {
     margin-left: 10px
 }
 
 #recommend .price-container p.crossed {
-    color: rgb(130, 130, 130);
+    color: rgb(170, 170, 170);
     text-decoration: line-through;
 
 }
