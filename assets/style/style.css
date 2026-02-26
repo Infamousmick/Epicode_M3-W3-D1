@@ -50,3 +50,85 @@ header nav.navbar .notifications, header nav.navbar .logo {
     border-radius: 50%;
     ;
 }
+
+/* Recommended */
+
+
+#recommend .card-avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#recommend .card-avatar>* {
+    padding: 0;
+    margin: 0;
+    /* margin-left: -10px; */
+}
+
+#recommend .card-avatar i {
+    color: rgb(82, 82, 82);
+    font-size: 0.95em;
+}
+
+
+#recommend .card-top {
+    border-bottom: 2px solid #EEEDF2;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+
+#recommend p.card-text {
+    font-weight: 500;
+}
+
+
+#recommend .stats-container i {
+
+    padding: 10px;
+    width: auto;
+    border-radius: 50%;
+    ;
+}
+
+.stats-container i {
+    color: rgb(82, 82, 82);
+}
+
+i.fa-chart-simple {
+    color: #7550FB
+}
+
+#recommend .stats-container p {
+    color: rgb(82, 82, 82);
+
+}
+
+#recommend .stats-container>* {
+    padding: 0;
+    margin: 0
+}
+
+#recommend .star-container>i {
+    padding: 10px;
+    color: #FBA746;
+}
+
+
+#recommend .price-container {
+    margin-left: 10px
+}
+
+#recommend .price-container p.crossed {
+    color: rgb(130, 130, 130);
+    text-decoration: line-through;
+
+}
+
+#recommend .sx-container>* {
+    margin-bottom: 0;
+}

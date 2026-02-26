@@ -9,6 +9,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="assets/style/style.css" />
     <script
       src="https://kit.fontawesome.com/b8761b87ac.js"
@@ -21,20 +25,37 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img src="assets/img/logo.svg" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.svg" alt="logo" />
+          </a>
+
+          <div class="d-flex align-items-center gap-3 order-lg-last">
+            <div class="d-flex gap-3 align-items-center">
+              <div class="notifications">
+                <img
+                  src="assets/img/notifications.png"
+                  alt="Notifiche"
+                  class="w-20"
+                />
+              </div>
+              <div class="logo">
+                <img src="assets/img/avatar-1.jpg" alt="" />
+              </div>
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
@@ -95,18 +116,6 @@
                 </ul>
               </li>
             </ul>
-            <div class="d-flex gap-3 align-items-center mx-1">
-              <div class="notifications">
-                <img
-                  src="assets/img/notifications.png"
-                  alt="Notifiche"
-                  class="w-20"
-                />
-              </div>
-              <div class="logo">
-                <img src="assets/img/avatar-1.jpg" alt="" />
-              </div>
-            </div>
           </div>
         </div>
       </nav>
@@ -192,8 +201,215 @@
         </div>
       </section>
     </main>
+    <section id="recommend">
+      <div class="container-md px-2 px-md-4 px-lg-5 pt-2 pt-md-4">
+        <h2>Recommend to you</h2>
+        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 row-gap-4">
+          <!--Col-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/course-graphql.jpg"
+                class="card-img-top"
+                alt="Corso"
+              />
+              <div class="card-body p-4 pb-1">
+                <div class="card-top">
+                  <p class="card-text">
+                    GraphQL: introduction to graphQL for begginners
+                  </p>
+                  <div class="card-stats">
+                    <div
+                      class="d-flex align-items-center stats-container gap-1 text-nowrap"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                      <p>2h 40m</p>
+                      <i class="fa-solid fa-chart-simple"></i>
+                      <p>Advance</p>
+                    </div>
+                    <div class="d-flex star-container">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="d-flex price-container gap-2">
+                      <p class="fw-bold">$500</p>
+                      <p class="crossed">$600</p>
+                    </div>
+                  </div>
+                </div>
 
+                <div
+                  class="d-flex card-avatar align-items-center justify-content-between ms-2 mt-3 gap-2 text-nowrap"
+                >
+                  <div class="d-flex align-items-center sx-container gap-2">
+                    <a href="#">
+                      <img src="assets/img/avatar-5.jpg" alt="avatar"
+                    /></a>
+                    <p>Brooklyn Simmons</p>
+                  </div>
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Col-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/course-graphql.jpg"
+                class="card-img-top"
+                alt="Corso"
+              />
+              <div class="card-body">
+                <div class="card-top">
+                  <p class="card-text">
+                    GraphQL: introduction to graphQL for begginners
+                  </p>
+                  <div class="card-stats">
+                    <div
+                      class="d-flex align-items-center stats-container gap-1 text-nowrap"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                      <p>2h 40m</p>
+                      <i class="fa-solid fa-chart-simple"></i>
+                      <p>Advance</p>
+                    </div>
+                    <div class="d-flex star-container">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="d-flex price-container gap-2">
+                      <p class="fw-bold">$500</p>
+                      <p class="crossed">$600</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex card-avatar align-items-center justify-content-between ms-2 mt-3 gap-2 text-nowrap"
+                >
+                  <div class="d-flex align-items-center sx-container gap-2">
+                    <a href="#">
+                      <img src="assets/img/avatar-5.jpg" alt="avatar"
+                    /></a>
+                    <p>Brooklyn Simmons</p>
+                  </div>
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Col-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/course-graphql.jpg"
+                class="card-img-top"
+                alt="Corso"
+              />
+              <div class="card-body">
+                <div class="card-top">
+                  <p class="card-text">
+                    GraphQL: introduction to graphQL for begginners
+                  </p>
+                  <div class="card-stats">
+                    <div
+                      class="d-flex align-items-center stats-container gap-1 text-nowrap"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                      <p>2h 40m</p>
+                      <i class="fa-solid fa-chart-simple"></i>
+                      <p>Advance</p>
+                    </div>
+                    <div class="d-flex star-container">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="d-flex price-container gap-2">
+                      <p class="fw-bold">$500</p>
+                      <p class="crossed">$600</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex card-avatar align-items-center justify-content-between ms-2 mt-3 gap-2 text-nowrap"
+                >
+                  <div class="d-flex align-items-center sx-container gap-2">
+                    <a href="#">
+                      <img src="assets/img/avatar-5.jpg" alt="avatar"
+                    /></a>
+                    <p>Brooklyn Simmons</p>
+                  </div>
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Col-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/course-graphql.jpg"
+                class="card-img-top"
+                alt="Corso"
+              />
+              <div class="card-body">
+                <div class="card-top">
+                  <p class="card-text">
+                    GraphQL: introduction to graphQL for begginners
+                  </p>
+                  <div class="card-stats">
+                    <div
+                      class="d-flex align-items-center stats-container gap-1 text-nowrap"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                      <p>2h 40m</p>
+                      <i class="fa-solid fa-chart-simple"></i>
+                      <p>Advance</p>
+                    </div>
+                    <div class="d-flex star-container">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="d-flex price-container gap-2">
+                      <p class="fw-bold">$500</p>
+                      <p class="crossed">$600</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex card-avatar align-items-center justify-content-between ms-2 mt-3 gap-2 text-nowrap"
+                >
+                  <div class="d-flex align-items-center sx-container gap-2">
+                    <a href="#">
+                      <img src="assets/img/avatar-5.jpg" alt="avatar"
+                    /></a>
+                    <p>Brooklyn Simmons</p>
+                  </div>
+                  <i class="fa-regular fa-bookmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
