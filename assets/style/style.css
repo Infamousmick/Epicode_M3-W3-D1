@@ -87,16 +87,14 @@ header nav.navbar .notifications, header nav.navbar .logo {
 }
 
 
-#recommend .stats-container i {
-    padding: 10px;
-    width: auto;
-    border-radius: 50%;
-    ;
+#recommend .stats-container i:first-of-type {
+    margin-left: 10px;
+
 }
 
 
 
-.stats-container i {
+#recommend .stats-container i:not(.fa-chart-simple) {
     color: rgb(82, 82, 82);
 }
 
