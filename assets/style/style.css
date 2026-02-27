@@ -138,3 +138,36 @@ i.fa-chart-simple {
 #recommend .sx-container>* {
     margin-bottom: 0;
 }
+
+/* Carosello */
+
+.carousel-icon-container {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* Fix card nei caroselli per schermi tra 992x e 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #recommend p.card-text {
+        font-size: 0.9rem;
+    }
+
+
+    #recommend .stats-container,
+    #recommend .star-container,
+    #recommend .price-container,
+    #recommend .sx-container p {
+        font-size: 0.8rem;
+    }
+
+    #recommend .card-body {
+        padding: 1rem 0.5rem !important;
+    }
+}
