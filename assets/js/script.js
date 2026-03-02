@@ -45,6 +45,8 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => {
   adattaCarosello();
 });
+
+// Bookmarks hover
 const bookmarkList = document.querySelectorAll(
   "section:not(#hero) .card-avatar i",
 );
