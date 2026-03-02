@@ -13,6 +13,82 @@ header nav.navbar .notifications, header nav.navbar .logo {
     cursor: pointer;
 }
 
+.notifications {
+    position: relative;
+    padding: 6px 7px;
+    border-radius: 50%;
+    background-color: #F1F0F5
+}
+
+.notifications i:first-child {
+    color: #AAA7BE;
+    font-size: 1.1em;
+
+}
+
+.notifications i:last-child {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    color: #7053F9;
+    background-color: #7053F9;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.collapseContainer i {
+    position: absolute;
+    right: 8%;
+    bottom: 5%;
+    background-color: #7BC699;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Collapse Avatar */
+.collapseContainer {
+    position: relative;
+}
+
+.collapseAvatar {
+    position: absolute;
+    top: 48px;
+    right: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 4px 12px black;
+}
+
+.collapseAvatar .card-top, .collapseAvatar .card-center, .collapseAvatar .card-bottom {
+    background-color: white;
+    padding: 12px;
+}
+
+.collapseAvatar .card-top, .collapseAvatar .card-center {
+    border-bottom: 1px solid rgb(204, 204, 204);
+
+}
+
+
+.collapseAvatar i {
+    font-size: 0.9em;
+}
+
+.collapseAvatar p.email {
+    color: rgb(176, 176, 176);
+    font-weight: 400;
+}
+
 /* Hero */
 .hero-top {
     background-color: #7550FF;
@@ -51,28 +127,28 @@ header nav.navbar .notifications, header nav.navbar .logo {
     ;
 }
 
-/* Recommended */
+/* Sections NOT hero */
 
 
-#recommend .card-avatar img {
+section:not(#hero) .card-avatar img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 
-#recommend .card-avatar>* {
+section:not(#hero) .card-avatar>* {
     padding: 0;
     margin: 0;
     /* margin-left: -10px; */
 }
 
-#recommend .card-avatar i {
+section:not(#hero) .card-avatar i {
     color: rgb(82, 82, 82);
     font-size: 0.95em;
 }
 
 
-#recommend .card-top {
+section:not(#hero) .card-top {
     border-bottom: 2px solid #EEEDF2;
     margin-left: -1rem;
     margin-right: -1rem;
@@ -82,19 +158,19 @@ header nav.navbar .notifications, header nav.navbar .logo {
 }
 
 
-#recommend p.card-text {
+section:not(#hero) p.card-text {
     font-weight: 500;
 }
 
 
-#recommend .stats-container i:first-of-type {
+section:not(#hero) .stats-container i:first-of-type {
     margin-left: 10px;
 
 }
 
 
 
-#recommend .stats-container i:not(.fa-chart-simple) {
+section:not(#hero) .stats-container i:not(.fa-chart-simple) {
     color: rgb(82, 82, 82);
 }
 
@@ -102,40 +178,40 @@ i.fa-chart-simple {
     color: #7550FB
 }
 
-#recommend .stats-container p {
+section:not(#hero) .stats-container p {
     color: rgb(82, 82, 82);
 
 }
 
-#recommend .stats-container>* {
+section:not(#hero) .stats-container>* {
     padding: 0;
     margin: 0
 }
 
-#recommend .star-container>i {
+section:not(#hero) .star-container>i {
     padding: 10px;
     color: #FBA746;
 }
 
-#recommend .star-container p {
+section:not(#hero) .star-container p {
     color: rgb(170, 170, 170);
 }
 
-#recommend .star-container p.star-text {
+section:not(#hero) .star-container p.star-text {
     color: #FBA746;
 }
 
-#recommend .price-container {
+section:not(#hero) .price-container {
     margin-left: 10px
 }
 
-#recommend .price-container p.crossed {
+section:not(#hero) .price-container p.crossed {
     color: rgb(170, 170, 170);
     text-decoration: line-through;
 
 }
 
-#recommend .sx-container>* {
+section:not(#hero) .sx-container>* {
     margin-bottom: 0;
 }
 
@@ -155,19 +231,39 @@ i.fa-chart-simple {
 /* Fix card nei caroselli per schermi tra 992x e 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    #recommend p.card-text {
+    section:not(#hero) p.card-text {
         font-size: 0.9rem;
     }
 
 
-    #recommend .stats-container,
-    #recommend .star-container,
-    #recommend .price-container,
-    #recommend .sx-container p {
+    section:not(#hero) .stats-container,
+    section:not(#hero) .star-container,
+    section:not(#hero) .price-container,
+    section:not(#hero) .sx-container p {
         font-size: 0.8rem;
     }
 
-    #recommend .card-body {
+    section:not(#hero) .card-body {
         padding: 1rem 0.5rem !important;
     }
+}
+
+
+/* Footer */
+footer {
+    background-color: #FFFFFF;
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+}
+
+footer p, footer nav ul li a {
+    color: #808080;
+    font-weight: 400;
+    font-size: 0.95em;
 }
