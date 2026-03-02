@@ -45,3 +45,17 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => {
   adattaCarosello();
 });
+const bookmarkList = document.querySelectorAll(
+  "section:not(#hero) .card-avatar i",
+);
+
+bookmarkList.forEach((bookmark) => {
+  bookmark.addEventListener("mouseenter", () => {
+    bookmark.classList.toggle("fa-regular");
+    bookmark.classList.toggle("fa-solid");
+  });
+  bookmark.addEventListener("mouseout", () => {
+    bookmark.classList.toggle("fa-regular");
+    bookmark.classList.toggle("fa-solid");
+  });
+});

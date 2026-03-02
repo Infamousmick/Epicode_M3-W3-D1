@@ -1,3 +1,31 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Feather';
+    src: url('../fonts/feather.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Feather', sans-serif;
+}
+
+
+h1, h5, section .carousel p.card-text {
+    font-weight: 600 !important;
+}
+
+p, h6 {
+    font-weight: 400;
+}
+
+section .card-avatar p {
+    color: rgb(82, 82, 82)
+}
+
+
+
 /* Header */
 header nav.navbar .notifications img {
     height: 20px;
@@ -139,12 +167,13 @@ section:not(#hero) .card-avatar img {
 section:not(#hero) .card-avatar>* {
     padding: 0;
     margin: 0;
-    /* margin-left: -10px; */
 }
 
 section:not(#hero) .card-avatar i {
     color: rgb(82, 82, 82);
     font-size: 0.95em;
+    cursor: pointer;
+
 }
 
 
@@ -217,6 +246,18 @@ section:not(#hero) .sx-container>* {
 
 /* Carosello */
 
+
+.carousel-control-prev,
+.carousel-control-next {
+    pointer-events: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    pointer-events: auto;
+
+}
+
 .carousel-icon-container {
     background-color: white;
     padding: 10px;
@@ -266,4 +307,28 @@ footer p, footer nav ul li a {
     color: #808080;
     font-weight: 400;
     font-size: 0.95em;
+}
+
+/* ---- Extra ---- */
+/*  Carousel card */
+
+section .carousel .card {
+    transition: all 0.3s ease;
+    transform-origin: top left
+}
+
+section .carousel .card:hover {
+
+    transform: scale(1.04) translateX(2%) translateY(2%);
+    box-shadow: 1px 1px 18px black;
+}
+
+section .carousel .row>div:last-child .card:hover {
+    transform-origin: top right;
+    transform: scale(1.04) translateX(-2%) translateY(2%);
+    box-shadow: -1px 1px 18px black;
+}
+
+.carousel-inner:hover {
+    overflow: visible;
 }
